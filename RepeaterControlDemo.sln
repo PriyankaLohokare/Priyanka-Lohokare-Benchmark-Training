@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "RepeaterControlDemo", ".", "{83E80D3E-CCED-4C19-BFD8-57794D06806B}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_50649"
+		Debug.AspNetCompiler.PhysicalPath = "..\RepeaterControlDemo\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50649\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_50649"
+		Release.AspNetCompiler.PhysicalPath = "..\RepeaterControlDemo\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50649\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "50649"
+		SlnRelativePath = "..\RepeaterControlDemo\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83E80D3E-CCED-4C19-BFD8-57794D06806B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83E80D3E-CCED-4C19-BFD8-57794D06806B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3B9F80EA-EB0B-4785-B934-6CE4C5C294EF}
+	EndGlobalSection
+EndGlobal
