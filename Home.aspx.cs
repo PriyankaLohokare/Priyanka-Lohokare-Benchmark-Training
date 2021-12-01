@@ -9,6 +9,21 @@ public partial class Home : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        if(Application["nohits"]==null)
+        {
+            Application["nohits"] = 1;
+        }
+        else
+        {
+            int i;
+            i = Convert.ToInt32(Application["nohits"]);
+            i++;
+            Application["nohits"]=i;
+        }
+        LblForHits.Text="No Of Hits Are: "+Application["nohits"].ToString();
+
+
+
         if(TextUser.Text=="")
         {
             LblErrUser.Text = "Please Enter user Name";
