@@ -1,0 +1,76 @@
+﻿@model IEnumerable<MVC_crud_.Models.EmpModel>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>index</title>
+</head>
+<body>
+    <p>
+    @Html.ActionLink("create new", "insertemp");
+    </p>
+    <table class="table" border="1">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(Model => Model.empid)
+
+            </th>
+            <th>
+                @Html.DisplayNameFor(Model => Model.empname)
+
+            </th>
+            <th>
+                @Html.DisplayNameFor(Model => Model.salary)
+
+            </th>
+            <th>
+                @Html.DisplayNameFor(Model => Model.designation)
+
+            </th>
+            <th>
+                @Html.DisplayNameFor(Model => Model.mgid)
+
+            </th>
+            <th>
+                @Html.DisplayNameFor(Model => Model.depno)
+
+            </th>
+        </tr>
+        @foreach(var item in Model)
+            {
+    <tr>
+
+        <td>
+            @Html.DisplayFor(modelItem => item.empid)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.empname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.salary)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.designation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.mgid)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.depno)
+        </td>
+        <td>
+            @Html.ActionLink("edit", "updateemp", new { empid = item.empid }) |
+            @Html.ActionLink("details", "detailemp", new { empid = item.empid }) |
+            @Html.ActionLink("delete", "deleteemp", new {  empid=item.empid })
+        </td>
+    </tr>
+            }
+    </table>
+</body>
+</html>

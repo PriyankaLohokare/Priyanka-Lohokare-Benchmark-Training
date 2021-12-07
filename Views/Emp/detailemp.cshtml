@@ -1,0 +1,81 @@
+﻿@model MVC_crud_.Models.EmpModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>detailemp</title>
+</head>
+<body>
+    <div>
+
+        @using (Html.BeginForm())
+        {
+            <table>
+                <tr>
+                    <td>
+                        @Html.DisplayNameFor(model => model.empid)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => model.empid, new { id = "txtempid" })
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.DisplayNameFor(model => model.empname)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => model.empname)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.DisplayNameFor(model => model.salary)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => model.salary)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.DisplayNameFor(model => model.designation)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => model.designation)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.DisplayNameFor(model => model.mgid)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => model.mgid)
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        @Html.DisplayNameFor(model => model.depno)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => model.depno)
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="submit" id="btnsubmit" />
+                    </td>
+                    <td>
+                        @Html.ActionLink("Back", "index");
+                    </td>
+
+                </tr>
+            </table>
+        }
+    </div>
+</body>
+</html>
