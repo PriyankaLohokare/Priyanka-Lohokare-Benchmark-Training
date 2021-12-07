@@ -1,0 +1,57 @@
+﻿@model IEnumerable<entityfr_demo.Models.employee>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.empname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.salary)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.designation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.mgid)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.depno)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.empname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.salary)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.designation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.mgid)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.depno)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.empid }) |
+            @Html.ActionLink("Details", "Details", new { id=item.empid }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.empid })
+        </td>
+    </tr>
+}
+
+</table>
